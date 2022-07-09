@@ -26,7 +26,7 @@ function allSameVowels(array) {
   return array.filter((word) => {
     let re = /[aeiou]/gi;
     let found = word.match(re);
-    return found.every((vowel, index) => {
+    return found.every((vowel) => {
       return found[0] === vowel;
     });
   });

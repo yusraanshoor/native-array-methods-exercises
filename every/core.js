@@ -39,26 +39,15 @@ function elementIsArray(matrix) {
 // and that they all only contain the same vowels.
 
 function allSameVowels(input) {
-  let vowels = [a,e,i,o,u];
   if (isString(input)) {
-    return input.every((element) => {
-     return element.every((letter){
-      let matchLetter = vowels.indexOf(letter)
-      })
+    return input.every((word) => {
+      let vowelsFound = word.match(/[aeiou]/gi);
+      return vowelsFound.every((vowel) => {
+        return vowelsFound[0] === vowel;
+      });
     });
   }
   return input;
-}
-
-function whatVowelsArePresent (array){
-  let 
-  let vowels = [a,e,i,o,u]
-  array.map((element) => {
-    element.map()
-    let letters = element.split('')
-     letters.map
-    
-  })
 }
 
 function isString(array) {
